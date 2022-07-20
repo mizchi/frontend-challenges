@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "test": "vitest --run"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "jquery": "^3.6.0"
+  }
+}
