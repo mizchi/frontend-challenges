@@ -4,7 +4,7 @@
 
 ## Challange it!
 
-Challanges has `npm test`. Pass it.
+All challanges have `npm test`. Pass it.
 
 ```bash
 $ npm install # install as root for test runners
