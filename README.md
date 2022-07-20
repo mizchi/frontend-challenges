@@ -1,10 +1,10 @@
-# Frontend Challanges
+# Frontend challenges
 
-(Now focusing bundle size challanges)
+(Now focusing bundle size challenges)
 
 ## Challenge it!
 
-All challanges have `npm test`. Pass it.
+All challenges have `npm test`. Pass it.
 
 ```bash
 $ npm install # install as root for test runners
