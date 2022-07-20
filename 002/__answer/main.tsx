@@ -1,16 +1,14 @@
-import {treeData, TreeData} from "./data";
+/** @jsx h */
+import {treeData, TreeData} from "../data";
 
 // Edit below.
-import React, { useCallback, useState } from "react";
-import ReactDOMClient from 'react-dom/client';
-
-const app = document.getElementById('app')!;
-const root = ReactDOMClient.createRoot(app);
+import { render, h, Fragment } from "preact";
+import { useState, useCallback } from "preact/hooks";
 
 function Tree(props: { tree: TreeData, depth: number }) {
   const [counter, setCounter] = useState(0);
   const onClick = useCallback(() => setCounter(n => n + 1), []);
-  return <>
+  return <Fragment>
     <div id={props.tree.id}>
       { '-'.repeat(props.depth)}
       { '*'.repeat(counter)}
@@ -19,7 +17,8 @@ function Tree(props: { tree: TreeData, depth: number }) {
       </button>
     </div>
     {props.tree.children.map((child, idx) => <Tree key={idx} tree={child} depth={props.depth + 1} />)}
-  </>
+  </Fragment>
 }
 
-root.render(<Tree tree={treeData} depth={0}/>);
+const app = document.getElementById('app')!;
+render(<Tree tree={treeData} depth={0}/>, app);

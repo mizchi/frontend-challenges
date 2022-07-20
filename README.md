@@ -1,10 +1,26 @@
 # Frontend Challanges
 
-## Try
+(Now focusing bundle size challanges)
 
-```
-$ npm install # install shared utils
+## Challange it!
+
+Challanges has `npm test`. Pass it.
+
+```bash
+$ npm install # install as root for test runners
 $ cd 001
 $ npm install
-$ npm test
+$ npm test # It will fail. Fix it!
 ```
+
+## Create new challange
+
+```bash
+cp -r __template 0xx
+# edit this
+# Pull Request here
+```
+
+## LICENSE
+
+MIT

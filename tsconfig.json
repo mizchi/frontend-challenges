@@ -4,9 +4,11 @@
     "module": "esnext",
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "jsx": "react",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
-  }
+  },
+  "exclude": ["*/__answer/*.ts", "*/__answer/*.tsx"]
 }

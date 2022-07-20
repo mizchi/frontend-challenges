@@ -4,7 +4,8 @@ import { test, expect } from "vitest";
 
 setupBundler();
 
-test.skip("check size", () => {
+test("check size", () => {
   const size = getEntrypointSize();
-  expect(size).lessThan(1000);
+  expect(size).lessThan(15000);
+  console.log(size);
 });
