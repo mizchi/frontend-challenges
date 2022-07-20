@@ -2,7 +2,7 @@
 
 (Now focusing bundle size challanges)
 
-## Challange it!
+## Challenge it!
 
 All challanges have `npm test`. Pass it.
 
@@ -13,7 +13,7 @@ $ npm install
 $ npm test # It will fail. Fix it!
 ```
 
-## Create new challange
+## Create new Challenge
 
 ```bash
 cp -r __template 0xx
