@@ -1,11 +1,11 @@
-# 00x
+# 002
 
 ## Goal
 
-- `dist/assets/index.*.js` < 1kb
+- `dist/assets/index.*.js` < 5kb
 
 ## Regulation
 
 You can edit bellow.
 
-- `main.ts`
+- `main.tsx`
